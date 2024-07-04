@@ -24,7 +24,11 @@ const liquorAreas = [
 
 const imageElement = document.getElementById('bar-image');
 
+<<<<<<< HEAD
 // 클릭 가능한 영역을 추가하는 함수 
+=======
+// 클릭 가능한 영역을 추가하는 함수
+>>>>>>> 1a03c69 (first_commit)
 function addClickableAreas() {
     const clickableAreas = [
         { id: 'boyfriend-area', x: 270, y: 300, width: 180, height: 440 }, // 남자친구 영역
@@ -134,10 +138,15 @@ function handleOverlayClick(event, area) {
         return clickX >= area.x && clickX <= (area.x + area.width) &&
                clickY >= area.y && clickY <= (area.y + area.height);
     }
+<<<<<<< HEAD
     
     //--------------------------//
     // 남자친구 영역 클릭 시 동작 //
     //--------------------------//
+=======
+
+    // 남자친구 영역 클릭 시 동작
+>>>>>>> 1a03c69 (first_commit)
     if (area.id === 'boyfriend-area' && checkAreaClick(area) && !buttonDisplayed) {
         imageElement.src = '../image/images/barpage/내버려둬.PNG';
         otherAreaClicked = true; 
@@ -188,9 +197,13 @@ function handleLiquorClick(event, area) {
     }
 }
 
+<<<<<<< HEAD
 // ------------------------------------------- //
 // 특정 영역을 클릭했을 때 종이 영역 추가되는 함수 // 
 // ------------------------------------------- //
+=======
+// 특정 영역을 클릭했을 때 추가되는 함수
+>>>>>>> 1a03c69 (first_commit)
 function addPaperArea() {
     const paperArea = { x: 495, y: 717, width: 126, height: 63 };
 
@@ -217,6 +230,7 @@ function addPaperArea() {
     // 클릭 이벤트 리스너 추가
     overlay.addEventListener('click', function(event) {
         event.stopPropagation(); // 이벤트 전파를 막아 오버레이 뒤의 요소가 클릭되지 않도록 함
+<<<<<<< HEAD
         addWordleArea();
     });
 }
@@ -258,6 +272,17 @@ function addWordleArea() {
 }
 
 
+=======
+        handlePaperClick(event, paperArea);
+    });
+}
+
+// 종이 영역 클릭 이벤트를 처리하는 함수
+function handlePaperClick(event, area) {
+    imageElement.src = '../image/images/barpage/신문.png';
+}
+
+>>>>>>> 1a03c69 (first_commit)
 // 클릭 횟수를 확인하는 함수
 function checkLiquorClickCombination() {
     if (liquorClickCounts['레몬주스따르기'] === 1 &&
@@ -286,5 +311,9 @@ function resetLiquorClickCounts() {
     }
 }
 // 초기 영역 추가
+<<<<<<< HEAD
 addClickableAreas();
 
+=======
+addClickableAreas();
+>>>>>>> 1a03c69 (first_commit)

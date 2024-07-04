@@ -16,6 +16,17 @@ document.addEventListener('mousemove', function(event) {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+>>>>>>> 1a03c69 (first_commit)
 // let buttonDisplayed = false; // 닫기 버튼이 이미 표시되었는지 여부를 확인하는 변수
 // let secondImageDisplayed = false; // 두 번째 이미지가 표시되었는지 여부를 확인하는 변수
 // let thirdImageDisplayed = false; // 세 번째 이미지가 표시되었는지 여부를 확인하는 변수

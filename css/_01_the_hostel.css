@@ -42,7 +42,11 @@ body {
 #overlay-top, #overlay-bottom {
     position: fixed;
     width: 100%;
+<<<<<<< HEAD
     height: 10vh; /* 화면의 절반가리기 50%(이거보고 줄이고 늘리고) */
+=======
+    height: 10vh; /* 화면의 절반을 가리기 위해 50%로 설정 */
+>>>>>>> 1a03c69 (first_commit)
     background-color: #000; /* 검은색 배경 */
     z-index: 1; /*게임 콘텐츠 위에 위치하도록*/
 }
@@ -70,7 +74,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+<<<<<<< HEAD
     font-size: 1.4rem;
+=======
+>>>>>>> 1a03c69 (first_commit)
     background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
     padding: 20px;
     border-radius: 10px;
@@ -107,7 +114,11 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 1rem;
+>>>>>>> 1a03c69 (first_commit)
     font-family: "Homemade Apple", 'yleeMortalHeartImmortalMemory', cursive;
     z-index: 2;
 }
@@ -155,3 +166,8 @@ body {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1a03c69 (first_commit)
