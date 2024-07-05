@@ -69,11 +69,24 @@ const patternbox = document.querySelector(".patternbox");
                 clearbtn.classList.remove("active");
             }, 150);
 
-            if (cnt1 === 1 && cnt2 === 2 && cnt3 === 3 && cnt4 === 0) {
-                alert("올ㅋ 열림!");
+            if (cnt1 === 3 && cnt2 === 2 && cnt3 === 1 && cnt4 === 0) {
+                alert("서랍이 열렸습니다.");
+                // 인벤토리에 깨진액자 추가
+            let inventory = JSON.parse(localStorage.getItem('inventory')) || [];
+            const itemExists = inventory.includes('../image/images/useritem/손목시계.png');
+            if (!itemExists) {
+                inventory.push('../image/images/useritem/손목시계.png');
+                localStorage.setItem('inventory', JSON.stringify(inventory));
+            }
+
+            // 메시지 표시 후 페이지 이동
+            setTimeout(function() {
+                alert('시계를 얻었습니다.');
+                window.location.href = '../../HTML/03_right_wall.html'; // 돌아갈 페이지로 이동
+            }, 500);
             }
         });
 
         document.getElementById('back-button').addEventListener('click', function() {
-            window.location.href = '../../HTML/_03_right_wall.html'; // 돌아갈 페이지로 이동
-          });
+            window.location.href = '../../HTML/03_right_wall.html'; // 돌아갈 페이지로 이동
+        });

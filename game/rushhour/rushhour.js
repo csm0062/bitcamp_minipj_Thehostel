@@ -43,11 +43,7 @@ function create () {
 	createBlock(4, 0, 1, 3);
 	createBlock(2, 2, 2, 1, true);
 	createBlock(2, 4, 1, 2);
-<<<<<<< HEAD
 	createBlock(5, 4, 1, 2);
-=======
-	createBlock(3, 4, 3, 1);
->>>>>>> 1a03c69 (first_commit)
 	
 	winText = game.add.text(20, 20, '', {
 		font: '40px helvetica',
